@@ -1,0 +1,40 @@
+# 环境变量（包含真实 API Key）
+.env
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+venv/
+
+# ======== 数据文件（不上传具体文档） ========
+# PPT 课件
+data/raw_docs/ppt/*
+# 历史优秀报告
+data/raw_docs/sample_reports/*
+# 参考报告文件
+data/reference_reports/*
+# 保留 metadata.json 模板
+!data/reference_reports/metadata.json
+# 向量数据库
+data/vector_db/
+# 学生上传文件
+data/uploads/
+
+# ======== 输出产物 ========
+outputs/flowcharts/*
+outputs/evaluations/*
+!outputs/flowcharts/.gitkeep
+!outputs/evaluations/.gitkeep
+
+# IDE
+.vscode/
+.idea/
+
+# macOS
+.DS_Store
+
+# Streamlit
+.streamlit/
