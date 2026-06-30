@@ -12,22 +12,29 @@ venv/
 # ======== 数据文件（不上传具体文档） ========
 # PPT 课件
 data/raw_docs/ppt/*
-# 历史优秀报告
-data/raw_docs/sample_reports/*
-# 参考报告文件
-data/reference_reports/*
-# 保留 metadata.json 模板
-!data/reference_reports/metadata.json
-# 向量数据库
-data/vector_db/
-# 学生上传文件
-data/uploads/
+!data/raw_docs/ppt/.gitkeep
 
-!.data/raw_docs/ppt/
-!.data/raw_docs/sample_reports/
-!.data/reference_reports/
-!.data/uploads/
-!.data/vector_db/
+# 2. 历史优秀报告
+data/raw_docs/sample_reports/*
+!data/raw_docs/sample_reports/.gitkeep
+
+# 3. 参考报告文件
+data/reference_reports/*
+# 保留 metadata.json 模板和 .gitkeep
+!data/reference_reports/metadata.json
+!data/reference_reports/.gitkeep
+
+# 4. 向量数据库 (注意：必须是 /* 而不是 /)
+data/vector_db/*
+!data/vector_db/.gitkeep
+
+# 5. 学生上传文件 (注意：必须是 /* 而不是 /)
+data/uploads/completed
+!data/uploads/completed/.gitkeep
+
+
+data/uploads/incompleted
+!data/uploads/incompleted/.gitkeep
 
 # ======== 输出产物 ========
 outputs/flowcharts/*
