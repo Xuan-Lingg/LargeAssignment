@@ -23,6 +23,12 @@ data/vector_db/
 # 学生上传文件
 data/uploads/
 
+!.data/raw_docs/ppt/
+!.data/raw_docs/sample_reports/
+!.data/reference_reports/
+!.data/uploads/
+!.data/vector_db/
+
 # ======== 输出产物 ========
 outputs/flowcharts/*
 outputs/evaluations/*
